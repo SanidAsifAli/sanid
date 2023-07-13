@@ -1,0 +1,18 @@
+version: 2 
+ 
+sources: 
+  - name: dq 
+    database: analytics
+    schema: dev_dbt_test__audit 
+    tables: 
+      - name: not_nulls_dq_src1_bill_hist 
+        identifier: not_nulls_check_src1_bill_hist 
+
+      - name: not_nulls_dq_src1_bill_hist_tbl 
+        identifier: not_nulls_check_src1_bill_hist_tbl 
+
+      - name: unique_dq_check_src1_bill_hist_tbl 
+        identifier: unique_check_src1_bill_hist_tbl 
+
+      - name: unique_dq_check_src1_bill_hist 
+        identifier: unique_check_src1_bill_hist 
