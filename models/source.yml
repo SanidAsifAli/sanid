@@ -1,0 +1,12 @@
+version: 2 
+ 
+sources: 
+  - name: analytics 
+    database: analytics
+    schema: raw_lob1 
+    tables: 
+      - name: billing_history_tbl 
+        identifier: raw_src1_billing_history_tbl 
+ 
+      - name: billing_history 
+        identifier: raw_src1_billing_history 
