@@ -1,0 +1,9 @@
+version: 2 
+ 
+sources: 
+  - name: meta 
+    database: analytics
+    schema: meta 
+    tables: 
+      - name: meta_rule_ctrl 
+        identifier: meta_rule_ctrl_tbl 
