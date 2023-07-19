@@ -32,6 +32,20 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 
+models:
+  dbt_snowflake_test:
+    +materialized: view
+    stage:
+      +materialized: table
+    meta:
+      +materialized: view    
+    dq:
+      +materialized: view
 
+tests:
+  dbt_snowflake_test:
+    +store_failures: true
+    +severity: warn
+    
 vars:
   tables: ['table1','table2','table3']
