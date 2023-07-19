@@ -46,5 +46,6 @@ tests:
   dbt_snowflake_test:
     +store_failures: true
     +severity: warn
+    
 vars:
   tables: ['table1','table2','table3']
