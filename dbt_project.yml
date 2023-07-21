@@ -36,9 +36,7 @@ models:
   dbt_snowflake_test:
     +materialized: view
     stage:
-      +materialized: table
-    meta:
-      +materialized: view    
+      +materialized: table 
     dq:
       +materialized: view
 
@@ -46,6 +44,3 @@ tests:
   dbt_snowflake_test:
     +store_failures: true
     +severity: warn
-    
-vars:
-  tables: ['table1','table2','table3']

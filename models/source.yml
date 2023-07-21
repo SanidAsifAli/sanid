@@ -1,12 +1,18 @@
 version: 2 
  
 sources: 
-  - name: analytics 
+  - name: meta 
     database: analytics
-    schema: raw_lob1 
+    schema: meta 
     tables: 
-      - name: billing_history_tbl 
-        identifier: raw_src1_billing_history_tbl 
- 
-      - name: billing_history 
-        identifier: raw_src1_billing_history 
+      - name: meta_rule_ctrl 
+        identifier: meta_rule_ctrl_tbl 
+
+      - name: meta_cyc_ctrl 
+        identifier: meta_cyc_ctrl_tbl
+
+      - name: meta_step_ctrl 
+        identifier: meta_step_ctrl_tbl
+
+      - name: meta_process_ctrl 
+        identifier: meta_process_ctrl_tbl
