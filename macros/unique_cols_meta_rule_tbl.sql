@@ -1,7 +1,7 @@
 {% macro unique_cols_meta_rule_tbl(model) %}
     {% set query %}
 
-        SELECT SRC_ATTR FROM {{ ref('meta_rule_ctrl') }} WHERE LOWER(SRC_ENTITY) = '{{ model }}' and RULE_NM='UNIQUE CHECK'
+        SELECT SRC_ATTR FROM {{ source("meta", "meta_rule_ctrl") }} WHERE LOWER(SRC_ENTITY) = '{{ model }}' and RULE_NM='UNIQUE CHECK'
 
     {% endset %}
 
