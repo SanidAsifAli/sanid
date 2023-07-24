@@ -11,8 +11,8 @@ sources:
       - name: not_nulls_check_raw_valuation2 
         identifier: not_nulls_check_raw_valuation2 
 
-      - name: unique_dq_check_raw_valuation1 
+      - name: unique_check_raw_valuation1 
         identifier: unique_check_raw_valuation1 
 
-      - name: unique_dq_check_raw_valuation2 
+      - name: unique_check_raw_valuation2 
         identifier: unique_check_raw_valuation2 
