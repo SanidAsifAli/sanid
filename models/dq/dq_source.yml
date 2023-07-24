@@ -3,7 +3,7 @@ version: 2
 sources: 
   - name: dq 
     database: dev_cur
-    schema: GARE_DBT_TEST__AUDIT 
+    schema: DBT_SANID_DBT_TEST__AUDIT 
     tables: 
       - name: not_nulls_check_raw_valuation1 
         identifier: not_nulls_check_raw_valuation1 
