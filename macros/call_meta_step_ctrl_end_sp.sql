@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call analytics.meta.proc_abcupdatestepend({{ step_sk }});
+        call dev_cur.meta.proc_abcupdatestepend({{ step_sk }});
         commit;
     {%- endset %}
 

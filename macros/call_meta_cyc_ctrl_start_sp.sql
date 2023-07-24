@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call analytics.meta.proc_abcupdatecycstart({{ cyc_sk }}, '{{ force_ind }}');
+        call dev_cur.meta.proc_abcupdatecycstart({{ cyc_sk }}, '{{ force_ind }}');
         commit;
     {%- endset %}
 
