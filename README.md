@@ -59,3 +59,24 @@ dbt run-operation call_meta_cyc_ctrl_start_sp --args '{"cyc_sk":"100", "force_in
 dbt run-operation call_meta_cyc_ctrl_end_sp --args '{"cyc_sk":"100"}'
 
 
+1. Cycle Start : Job #1 : 384461
+
+2. Raw_To_Stage_Load_Start : Job #2 : 384463
+
+3. Raw to Stage Table 1 Load: Job# 3 : 384465     
+
+3. Raw to Stage Table 2 Load : Job# 4 : 384467
+
+4. Raw to Stage Load End : Job #5 : 384468
+
+5. Data Quality Start : Job #6 : 384469
+
+6. Data Quality Table 1 Test: Job #7 : 384470
+
+6. Data Quality Table 2 Test: Job #8: 384472
+
+7. Data Quality End: Job #9: 384473
+
+8. Cycle End: Job #10: 384475
+
+
