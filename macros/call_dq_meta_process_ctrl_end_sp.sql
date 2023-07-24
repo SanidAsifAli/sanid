@@ -7,7 +7,7 @@
 
         begin transaction;
 
-        call analytics.meta.proc_abcupdateprocessend({{ process_sk }});
+        call dev_cur.meta.proc_abcupdateprocessend({{ process_sk }});
 
         commit;
 
