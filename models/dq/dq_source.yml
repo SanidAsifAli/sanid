@@ -2,17 +2,17 @@ version: 2
  
 sources: 
   - name: dq 
-    database: analytics
-    schema: DBT_SANID_DBT_TEST__AUDIT 
+    database: dev_cur
+    schema: GARE_DBT_TEST__AUDIT 
     tables: 
-      - name: not_nulls_dq_src1_bill_hist 
-        identifier: not_nulls_check_src1_bill_hist 
+      - name: not_nulls_check_raw_valuation1 
+        identifier: not_nulls_check_raw_valuation1 
 
-      - name: not_nulls_dq_src1_bill_hist_tbl 
-        identifier: not_nulls_check_src1_bill_hist_tbl 
+      - name: not_nulls_check_raw_valuation2 
+        identifier: not_nulls_check_raw_valuation2 
 
-      - name: unique_dq_check_src1_bill_hist_tbl 
-        identifier: unique_check_src1_bill_hist_tbl 
+      - name: unique_dq_check_raw_valuation1 
+        identifier: unique_check_raw_valuation1 
 
-      - name: unique_dq_check_src1_bill_hist 
-        identifier: unique_check_src1_bill_hist 
+      - name: unique_dq_check_raw_valuation2 
+        identifier: unique_check_raw_valuation2 
