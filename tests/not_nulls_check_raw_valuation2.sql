@@ -1,3 +1,3 @@
-{% set cols = not_nulls_cols_meta_rule_tbl("raw_valuation1") %}
+{% set cols = not_nulls_cols_meta_rule_tbl("cur_valuation1") %}
 
-{{ not_nulls_in_columns(ref("raw_valuation2"), cols) }}
+{{ not_nulls_in_columns(ref("cur_valuation2"), cols) }}
