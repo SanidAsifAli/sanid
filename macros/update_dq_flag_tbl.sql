@@ -6,9 +6,9 @@ then 'NULL_CHECK'
 when substring('{{ src_model }}',1,9)='not_nulls' and (dq_check is not null 
 and dq_check not like '%NULL_CHECK%')
 then CONCAT(dq_check,':','NULL_CHECK')
-when substring('{{ src_model }}',1,9)='unique_dq' and dq_check is null
+when substring('{{ src_model }}',1,6)='unique' and dq_check is null
 then 'UNIQUE_CHECK'
-when substring('{{ src_model }}',1,9)='unique_dq' and (dq_check is not null 
+when substring('{{ src_model }}',1,6)='unique' and (dq_check is not null 
 and dq_check not like '%UNIQUE_CHECK%')
 then CONCAT(dq_check,':','UNIQUE_CHECK') else dq_check
  end
