@@ -39,7 +39,6 @@ models:
       +materialized: table 
     dq:
       +materialized: view
-      schema: gare
 
 tests:
   dbt_snowflake_test:
