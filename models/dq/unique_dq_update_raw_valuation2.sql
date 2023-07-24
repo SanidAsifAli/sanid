@@ -5,7 +5,7 @@ from
     {{
         config(
             post_hook=update_dq_flag_tbl(
-                "unique_dq_update_raw_valuation2", "raw_valuation2", "billing_history_tbl_id"
+                "unique_dq_update_raw_valuation2", "curr_valuation2", "billing_history_tbl_id"
             )
         )
     }}
