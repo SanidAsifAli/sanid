@@ -1,6 +1,6 @@
 select *
 from
-    {{ source("dq", "not_nulls_dq_raw_valuation2") }}
+    {{ source("dq", "not_nulls_check_raw_valuation2") }}
 
     {{
         config(
