@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call ey_iip_rga.meta.sp_process_start({{ process_sk }}, {{ step_sk }});
+        call eyiip_rga_db.meta.sp_process_start({{ process_sk }}, {{ step_sk }});
         commit;
     {%- endset %}
 

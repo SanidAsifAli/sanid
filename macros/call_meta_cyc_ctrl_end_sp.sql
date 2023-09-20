@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call ey_iip_rga.meta.sp_cyc_end({{ cyc_sk }});
+        call eyiip_rga_db.meta.sp_cyc_end({{ cyc_sk }});
         commit;
     {%- endset %}
 

@@ -1,8 +1,8 @@
 version: 2 
  
 sources: 
-  - name: raw 
-    database: ey_iip_rga
+  - name: dev_raw 
+    database: eyiip_rga_db
     schema: raw_lob1 
     tables: 
       - name: raw_valuation1 
