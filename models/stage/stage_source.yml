@@ -1,12 +1,12 @@
 version: 2 
  
 sources: 
-  - name: ey_iip_rga 
+  - name: raw 
     database: ey_iip_rga
-    schema: dbt_cloud_demo 
+    schema: raw_lob1 
     tables: 
       - name: raw_valuation1 
-        identifier: raw_valuation1 
+        identifier: raw_stg_src1_billing_history 
  
       - name: raw_valuation2 
         identifier: raw_valuation2
