@@ -7,7 +7,7 @@
 
         begin transaction;
 
-        call dev_cur.meta.proc_abcupdateprocessend({{ process_sk }});
+        call ey_iip_rga.meta.sp_process_end({{ process_sk }});
 
         commit;
 
