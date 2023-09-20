@@ -2,7 +2,7 @@ version: 2
  
 sources: 
   - name: dev_raw 
-    database: ey_iip_rga
+    database: eyiip_rga_db
     schema: raw_lob1 
     tables: 
       - name: raw_valuation1 

@@ -2,7 +2,7 @@ version: 2
  
 sources: 
   - name: meta 
-    database: ey_iip_rga
+    database: eyiip_rga_db
     schema: meta 
     tables: 
       - name: meta_rule_ctrl 

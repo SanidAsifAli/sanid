@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call ey_iip_rga.meta.sp_cyc_start({{ cyc_sk }}, '{{ force_ind }}');
+        call eyiip_rga_db.meta.sp_cyc_start({{ cyc_sk }}, '{{ force_ind }}');
         commit;
     {%- endset %}
 
