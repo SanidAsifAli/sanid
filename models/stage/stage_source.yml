@@ -1,9 +1,9 @@
 version: 2 
  
 sources: 
-  - name: dev_raw 
-    database: dev_raw
-    schema: gare 
+  - name: ey_iip_rga 
+    database: ey_iip_rga
+    schema: dbt_cloud_demo 
     tables: 
       - name: raw_valuation1 
         identifier: raw_valuation1 
