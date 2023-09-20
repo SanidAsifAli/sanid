@@ -2,7 +2,7 @@ version: 2
  
 sources: 
   - name: dq 
-    database: dev_cur
+    database: ey_iip_rga
     schema: DBT_SANID_DBT_TEST__AUDIT 
     tables: 
       - name: not_nulls_dq_update_raw_valuation1 
