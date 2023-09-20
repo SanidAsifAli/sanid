@@ -9,4 +9,4 @@ sources:
         identifier: raw_stg_src1_billing_history 
  
       - name: raw_valuation2 
-        identifier: raw_valuation2
+        identifier: stg_src1_billing_history_tbl
