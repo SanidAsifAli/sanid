@@ -2,7 +2,7 @@
 
     {% set query -%}
         begin transaction;
-        call dev_cur.meta.proc_abcupdateprocessstart({{ process_sk }}, {{ step_sk }});
+        call ey_iip_rga.meta.sp_process_start({{ process_sk }}, {{ step_sk }});
         commit;
     {%- endset %}
 
